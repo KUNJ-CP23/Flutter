@@ -4,18 +4,20 @@ void main(){
   stdout.write('Enter n: ');
   int n = int.parse(stdin.readLineSync()!);
 
-  // int k = fibonacci(n);
-  //   print("Sum of fibonacci until $n is $k");
+  fibonacci(n);
+}
+
+//method to calculate fibonacci until n
+void fibonacci(int n){
+  int a = 0;
+  int b = 1;
+
+  for(int i=0 ; i<=n ; i++){
+    stdout.write("$a ");
+    int sum = a + b;
+    a = b;
+    b = sum;
+  }
+  print("");
 
 }
-//
-// //method to calculate fibonacci until n
-// int fibonacci(int? n){
-//   int sum;
-//   int a = 0;
-//   int b = 1;
-//   while(b!=n){
-//
-//   }
-//
-// }
