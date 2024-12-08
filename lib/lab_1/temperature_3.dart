@@ -5,5 +5,5 @@ void main(){
   print("Enter Fahrenheit : ");
   double f = double.parse(stdin.readLineSync()!);
   double ?c = (5/9)*(f-32);
-  print("${c} degrees Fahrenheit");
+  print("${c} deg Fahrenheit");
 }
