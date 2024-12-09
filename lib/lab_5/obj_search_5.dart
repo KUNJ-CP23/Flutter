@@ -1,15 +1,30 @@
+// import 'dart:io';
+//
+// void main() {
+//   Map<String, Object?> friends = {};
+//
+//   while (true) {
+//     stdout.write("Enter contact name: ");
+//     String name = stdin.readLineSync()!;
+//
+//   }
+//
+// }
+
 import 'dart:io';
 
-void main() {
-  Map<String, Object?> friends = {};
+class Friend {
+  String name;
+  String phoneNumber;
+  String email;
 
-  while (true) {
-    stdout.write("Enter contact name: ");
-    String name = stdin.readLineSync()!;
-
-  }
-
+  Friend(
+      this.name,
+      this.phoneNumber,
+      this.email
+      );
 }
-class Friend(){
+
+void main(){
 
 }

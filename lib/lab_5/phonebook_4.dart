@@ -18,11 +18,7 @@ import 'dart:io';
 void main() {
   Map<String, String> phoneBook = {};
 
-  print("\nPhonebook Menu:");
-  print("1. Add a contact");
-  print("2. Display all contacts");
-  print("3. Exit");
-
+  print("Phonebook Menu: \n1. Add a contact\n2. Display all contacts\n3. Exit");
   while (true) {
 
     stdout.write("Enter your choice (1-4): ");
@@ -51,13 +47,12 @@ void main() {
         }
         break;
 
-      case 2:
-      // Exit the program
-        print("Exiting the phonebook. Goodbye!");
+      case 3:
+        print("Exiting the phonebook!");
         return;
 
       default:
-        print("Invalid choice! Please enter a number between 1 and 4.");
+        print("Invalid choice! Please enter a number 1,2 or 3.");
     }
   }
 }

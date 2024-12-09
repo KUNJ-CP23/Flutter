@@ -1,20 +1,25 @@
 import 'dart:io';
 
 void main(){
-  stdout.write('Enter a: ');
-  int a = int.parse(stdin.readLineSync()!);
-  stdout.write('Enter b: ');
-  int b = int.parse(stdin.readLineSync()!);
-  bool k = check_max(a, b);
-  if(k){
-    print("$a is greater");
+  stdout.write('Enter n: ');
+  int n = int.parse(stdin.readLineSync()!);
+  int ans = check(n);
+  if(ans == 1){
+    print("$n is prime number");
   }
   else{
-    print("$b is greater");
+    print("$n is not a prime number");
   }
 }
 
-//method to check greater from 2 numbers
-bool check_max(int? a, int? b){
-  return(a!>b!);
+//method to check if num is prime or not
+int check(int n){
+  if (n <= 1) return 0;
+
+  for(int i = 2 ; i<=n~/2 ; i++){
+    if (n % i == 0) {
+      return 0;
+    }
+  }
+  return 1;
 }

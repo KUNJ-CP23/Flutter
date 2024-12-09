@@ -1,19 +1,23 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter first list, separated by spaces: ");
-  List <int> intlist = [];
-  while(true){
-    stdout.write("Enter n" + i.toString() + " : ");
-    int n = int.parse(stdin.readLineSync()!);
-  }
-  // int sum=0;
-  // for (int i = 0; i <list1.length; i++) {
-  //   int n = list1[i] as int;
-  //   if(n%3 ==0 || n%5 == 0){
-  //     sum += n;
-  //   }
-  // }
+  stdout.write("Enter the number of elements: ");
+  int n = int.parse(stdin.readLineSync()!);
 
-  // print("Sum : $sum");
+  List<int> numbers = [];
+
+  print("Enter $n numbers:");
+  for (int i = 0; i < n; i++) {
+    stdout.write("Element ${i + 1}: ");
+    numbers.add(int.parse(stdin.readLineSync()!));
+  }
+
+  int sum = 0;
+  for (int num in numbers) {
+    if (num % 3 == 0 || num % 5 == 0) {
+      sum += num;
+    }
+  }
+
+  print("The sum of numbers divisible by either 3 or 5 is: $sum");
 }
