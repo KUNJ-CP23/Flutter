@@ -11,19 +11,16 @@ void main(){
   stdout.write("Enter the minutes: ");
   int minutes = int.parse(stdin.readLineSync()!);
 
-  hours = hours % 12;
-  double minuteAngle = minutes*6;
+  double minAngle = minutes*6;
 
-// // Calculate the angle of the hour hand
-//   double hourAngle = (hours * 30) + (minutes / 60) * 30;
-//
-//   // Calculate the angle between the two hands
-//   double angleBetweenHands = (hourAngle - minuteAngle).abs();
-//
-//   // Ensure the angle is always the smaller angle
-//   if (angleBetweenHands > 180) {
-//     angleBetweenHands = 360 - angleBetweenHands;
-//   }
-//$ anglebetween
-  print("The angle between the hour and minute hands is:  degrees");
+  double hourAngle = ((hours%12) * 30) + (minutes / 60) * 30;
+
+  double angle = (hourAngle - minAngle).abs();
+
+  // Ensure the angle is always the smaller angle
+  if (angle > 180) {
+    angle = 360 - angle;
+  }
+
+  print("The angle between the hour and minute hands is: $angle degrees");
 }
