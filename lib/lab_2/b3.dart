@@ -8,10 +8,37 @@ import 'dart:io';
 void main() {
   List<int> numbers = [];
 
-  for (int i = 0; i < numbers.length; i++) {
-    stdout.write("${i + 1}: ");
-    numbers.add(int.parse(stdin.readLineSync()!));
+  for (int i = 1; i <=5; i++) {
+    stdout.write("Enter n" + i.toString() + " : ");
+    int n = int.parse(stdin.readLineSync()!);
+    numbers.add(n);
   }
+  stdout.write(numbers);
 
 
 }
+
+// void main() {
+//   // Example input
+//   List<int> nums1 = [3, 2, 3];
+//   List<int> nums2 = [2, 2, 1, 1, 1, 2, 2];
+//
+//   print("Majority Element in nums1: ${findMajorityElement(nums1)}");
+//   print("Majority Element in nums2: ${findMajorityElement(nums2)}");
+// }
+//
+// int findMajorityElement(List<int> nums) {
+//   int count = 0;
+//   int candidate = 0;
+//
+//   // Boyer-Moore Voting Algorithm
+//   for (int num in nums) {
+//     if (count == 0) {
+//       candidate = num;
+//     }
+//     count += (num == candidate) ? 1 : -1;
+//   }
+//
+//   return candidate; // Assumes a majority element always exists
+// }
+
