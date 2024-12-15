@@ -5,61 +5,36 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter the size of the list: ");
+  stdout.write("enter the size of the array: ");
   int size = int.parse(stdin.readLineSync()!);
 
   List<int> nums = [];
-  print("Enter $size integers:");
+  print("enter $size integers:");
 
   for (int i = 0; i < size; i++) {
-    stdout.write("Enter integer ${i + 1}: ");
+    stdout.write("enter integer ${i + 1}: ");
     int num = int.parse(stdin.readLineSync()!);
     nums.add(num);
   }
 
-  print(nums);
+  int? majEle;
+  int highcnt = 0;
 
-}
-int findMajorityElement(List<int> nums) {
-  Map<int, int> freqMap = {};
+  for (int i = 0; i < nums.length; i++) {
+    int currCnt = 0;
 
-  // Populate the frequency map
-  for (int num in nums) {
-    if (freqMap.containsKey(num)) {
-      freqMap[num] = freqMap[num]! + 1;
-    } else {
-      freqMap[num] = 1;
+    for (int j = 0; j < nums.length; j++) {
+      if (nums[i] == nums[j]) {
+        currCnt++;
+      }
     }
 
-    // Check if this number is the majority element
-    if (freqMap[num]! > nums.length ~/ 2) {
-      return num;
+    if (currCnt > highcnt) {
+      highcnt = currCnt;
+      majEle = nums[i];
     }
   }
-  throw Exception("No majority element found"); // This line assumes input is valid.
+
+  print('Majority element: $majEle');
+  print('Repeated ${highcnt} times}');
 }
-
-// void main() {
-//   // Example input
-//   List<int> nums1 = [3, 2, 3];
-//   List<int> nums2 = [2, 2, 1, 1, 1, 2, 2];
-//
-//   print("Majority Element in nums1: ${findMajorityElement(nums1)}");
-//   print("Majority Element in nums2: ${findMajorityElement(nums2)}");
-// }
-//
-// int findMajorityElement(List<int> nums) {
-//   int count = 0;
-//   int candidate = 0;
-//
-//   // Boyer-Moore Voting Algorithm
-//   for (int num in nums) {
-//     if (count == 0) {
-//       candidate = num;
-//     }
-//     count += (num == candidate) ? 1 : -1;
-//   }
-//
-//   return candidate; // Assumes a majority element always exists
-// }
-
