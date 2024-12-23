@@ -10,15 +10,7 @@ class Layout extends StatelessWidget {
       appBar: AppBar(
         title: Text('LAYOUT'),
       ),
-      body: Row(
-        children: [
-          Expanded(
-              child: Column(
 
-              )),
-          Expanded(child: Column())
-        ],
-      ),
     );
   }
 }
