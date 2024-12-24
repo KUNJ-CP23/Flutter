@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_programs/lab_7/text_1.dart';
+import 'package:lab_programs/lab_7/controller_3.dart';
 
 void main() {
   runApp(const MyApp());

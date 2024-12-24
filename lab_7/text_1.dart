@@ -8,16 +8,17 @@ class Layout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.pinkAccent,
         title: Text(
-            'Kunjjjj'
+            'Kunjj'
         ),
       ),
       body: Text(
-          'Holaa!',
+          'Hola!',
         style: TextStyle(
             backgroundColor: Colors.blueAccent,
-            color: Colors.white
+            color: Colors.white,
+          fontSize: 30
         )
       ),
     );

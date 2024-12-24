@@ -7,12 +7,16 @@ class Layout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: customText(name: "KUnj", clr: Colors.pinkAccent),
+      body: customText(
+          name: "KUnj",
+          clr: Colors.pinkAccent,
+          bgcolor : Colors.black),
     );
   }
-  Widget customText({required String name , required Color clr}){
+  Widget customText({required String name , required Color clr, required bgcolor}){
     return Text(name,style: TextStyle(
-        color: clr
+        color: clr,
+      backgroundColor: bgcolor
     ),);
   }
 }
