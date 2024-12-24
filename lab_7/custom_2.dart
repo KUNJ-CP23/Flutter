@@ -7,15 +7,12 @@ class Layout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text(
-            'Kunjjjj'
-        ),
-      ),
-      body: Text(
-          'Holaa!'
-      ),
+      body: customText(name: "KUnj", clr: Colors.pink),
     );
+  }
+  Widget customText({required String name , required Color clr}){
+    return Text(name,style: TextStyle(
+        color: clr
+    ),);
   }
 }

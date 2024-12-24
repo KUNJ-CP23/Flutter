@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_programs/lab_6_x_7/lay3.dart';
+import 'package:lab_programs/lab_7/text_1.dart';
 
 void main() {
   runApp(const MyApp());
