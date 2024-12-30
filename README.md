@@ -30,3 +30,19 @@ Follow these steps to set up and run the project locally:
 ### **1. Clone this repository**  
 ```bash
 git clone https://github.com/KUNJ-cp23/Flutter
+```
+
+### **2. Navigate to the project directory**
+```bash
+cd your-Flutter
+```
+
+### **3. Install dependencies**
+```bash
+flutter pub get
+```
+
+### **4.Run the app**
+```bash
+flutter run
+```
