@@ -1,4 +1,4 @@
-# Flutter - My First Project 🎉
+# Flutter - My First Project
 
 Welcome to my **Flutter Lab Programs Repository**! 🚀  
 This project contains a collection of **basic Flutter programs** designed for **learning and practice** during lab sessions.  
