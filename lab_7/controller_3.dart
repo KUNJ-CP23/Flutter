@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
-class Layout extends StatefulWidget {
-  const Layout({super.key});
+class Controller3 extends StatefulWidget {
+  const Controller3({super.key});
 
   @override
-  State<Layout> createState() => _LayoutState();
+  State<Controller3> createState() => _LayoutState();
 }
 
-class _LayoutState extends State<Layout> {
+class _LayoutState extends State<Controller3> {
   TextEditingController name = TextEditingController();
   @override
   Widget build(BuildContext context) {

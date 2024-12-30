@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:lab_programs/lab_7/controller_3.dart';
+import 'package:lab_programs/lab_7/custom_2.dart';
+import 'package:lab_programs/lab_7/text_1.dart';
+import 'package:lab_programs/lab_7/txtfld_onclick_5.dart';
+import 'package:lab_programs/lab_8/form_extra.dart';
+import 'package:lab_programs/lecture_design_2612/launch_page.dart';
+import 'package:lab_programs/lecture_design_2612/user_entry_form.dart';
+import 'package:lab_programs/lab_7/textfield_4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Layout(),
+      home: UserEntryFormPage(),
     );
   }
 }
