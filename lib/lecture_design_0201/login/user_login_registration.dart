@@ -39,7 +39,7 @@ class _UserLoginRegistrationPageState extends State<UserLoginRegistrationPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/download.jpeg'),
+              Image.asset('assets/images/logo2.png'),
               SizedBox(
                 height: 50,
               ),
