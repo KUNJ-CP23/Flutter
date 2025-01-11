@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_programs/lab_9/temp.dart';
+import 'package:labprogram/lab_9/temp.dart';
 
 class Bdaynavigation extends StatefulWidget {
   const Bdaynavigation({super.key});

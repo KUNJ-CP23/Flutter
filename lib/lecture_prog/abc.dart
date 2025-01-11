@@ -1,4 +1,4 @@
-import 'package:lab_programs/lecture_prog/anonymous.dart';
+import 'package:labprogram/lecture_prog/anonymous.dart';
 
 void main() {
   // print('ANS OF TWO NUMBER ADDITION : ${additionOfTwoNo(10, c: 20)}');

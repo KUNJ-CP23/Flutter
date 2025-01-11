@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:lab_programs/lecture_prog/string_const.dart';
-import 'package:lab_programs/lecture_prog/user.dart';
+import 'package:labprogram/lecture_prog/string_const.dart';
+import 'package:labprogram/lecture_prog/user.dart';
 
 
 void main() {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //timer duration mate
 import 'dart:async';
-import 'package:lab_programs/lab_8/splash.dart';
+import 'package:labprogram/lab_8/splash.dart';
 
 
 class SplashScreen extends StatefulWidget {

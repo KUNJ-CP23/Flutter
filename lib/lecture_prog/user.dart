@@ -1,4 +1,4 @@
-import 'package:lab_programs/lecture_prog/string_const.dart';
+import 'package:labprogram/lecture_prog/string_const.dart';
 
 class User {
   List<Map<String, dynamic>> userList = [];

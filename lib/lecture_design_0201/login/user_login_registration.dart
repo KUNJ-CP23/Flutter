@@ -1,4 +1,4 @@
-import 'package:lab_programs/lecture_prog/string_const.dart';
+import 'package:labprogram/lecture_prog/string_const.dart';
 import 'package:flutter/material.dart';
 
 class UserLoginRegistrationPage extends StatefulWidget {

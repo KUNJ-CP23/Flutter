@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lab_programs/lab_8/splash_scree.dart';
+import 'package:labprogram/lab_8/splash_scree.dart';
 
 class Splash extends StatelessWidget {
   const Splash({super.key});

@@ -1,4 +1,4 @@
-import 'package:lab_programs/lecture_design_0201/add_edit/user_entry_form.dart';
+import 'package:labprogram/lecture_design_0201/add_edit/user_entry_form.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
