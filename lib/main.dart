@@ -8,6 +8,7 @@ import 'package:labprogram/lab_8/form_extra.dart';
 import 'package:labprogram/lab_8/imgass_1.dart';
 import 'package:labprogram/lab_8/splash_scree.dart';
 import 'package:labprogram/lab_9/bdaynavigation.dart';
+import 'package:labprogram/lab_tab_last/listdemolearn.dart';
 import 'package:labprogram/lab_tab_last/tabview_basic.dart';
 import 'package:labprogram/lecture_design_0201/list/user_list_file.dart';
 import 'package:labprogram/lecture_design_0201/login/user_login_registration.dart';
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Tab_view(),
+      home: ListViewDemo(),
     );
   }
 }
