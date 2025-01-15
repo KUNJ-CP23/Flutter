@@ -16,6 +16,7 @@ import 'package:labprogram/lecture_design_0201/login/user_login_registration.dar
 import 'package:labprogram/lecture_design_2612/launch_page.dart';
 import 'package:labprogram/lecture_design_2612/user_entry_form.dart';
 import 'package:labprogram/lab_7/textfield_4.dart';
+import 'package:labprogram/lecture_tabbar_1501/flutter_tab_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Tab_view_list(),
+      home: FlutterTabBarPage(),
     );
   }
 }
