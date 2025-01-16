@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:labprogram/lab_6/1.dart';
+import 'package:labprogram/lab_6/2.dart';
+import 'package:labprogram/lab_6/3_1.dart';
+import 'package:labprogram/lab_6/3_2.dart';
+import 'package:labprogram/lab_6/flut_demo.dart';
+import 'package:labprogram/lab_6/lay_ex1.dart';
 import 'package:labprogram/lab_7/controller_3.dart';
 import 'package:labprogram/lab_7/custom_2.dart';
 import 'package:labprogram/lab_7/text_1.dart';
@@ -51,7 +57,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FlutterPageView(),
+      home: Layout3_2(),
     );
   }
 }
