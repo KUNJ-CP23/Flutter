@@ -76,7 +76,7 @@ class _FlutterPageViewState extends State<FlutterPageView> {
                         ),
                       ),
                       Text(
-                        'Hello, Mehul',
+                        'Hello, Kunj',
                         style: TextStyle(
                             color: Colors.red,
                             fontSize: 22,
