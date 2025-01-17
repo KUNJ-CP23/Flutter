@@ -1,28 +1,3 @@
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-//
-// class Controller3_2 extends StatelessWidget {
-//
-//   TextEditingController name = TextEditingController();
-//
-//   @override
-//   Widget build(BuildContext context) {
-//
-//     return Scaffold(
-//       body: Column(
-//         children: [
-//           TextField(
-//             controller: name,
-//           ),
-//           ElevatedButton(onPressed: (){
-//             print(name.text);
-//           },child: Text("submit")),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 class Controller3_2 extends StatelessWidget {
@@ -47,8 +22,9 @@ class Controller3_2 extends StatelessWidget {
               controller: textController,
               decoration: InputDecoration(
                 labelText: 'Enter Text',
+                hintText: "Enter text",
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.vertical(),
                 ),
               ),
             ),
@@ -58,7 +34,7 @@ class Controller3_2 extends StatelessWidget {
                 // Print the input value to the terminal
                 print("Input value: ${textController.text}");
               },
-              child: const Text("Print to Terminal"),
+              child: const Text("Print"),
             ),
           ],
         ),
