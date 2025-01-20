@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:labprogram/crud_TB/addUser.dart';
+import 'package:labprogram/crud_TB/userList.dart';
+import 'package:labprogram/cruddemobymyself/cruddemo.dart';
 import 'package:labprogram/lab_6/1.dart';
 import 'package:labprogram/lab_6/2.dart';
 import 'package:labprogram/lab_6/3_1.dart';
@@ -58,7 +61,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: CrudDemoK(),
     );
   }
 }

@@ -44,7 +44,7 @@ class Tab_view_list extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       height: 200,
-                      color: Colors.black,
+                      color: Colors.green,
                     ),
                   ),
                   Padding(
