@@ -12,12 +12,12 @@ class _CrudDemoKState extends State<CrudDemoK> {
   TextEditingController nameController = TextEditingController();
   List<String> names = ["demo", "demo2"];
 
-  void addItem(String name){
-    setState(() {
-      nameController.add(name);
-    });
-
-  }
+  // void addItem(String name){
+  //   setState(() {
+  //     nameController.add(name);
+  //   });
+  //
+  // }
   void editItem(){
 
   }
@@ -32,23 +32,9 @@ class _CrudDemoKState extends State<CrudDemoK> {
         backgroundColor: Colors.pinkAccent,
         title: Text("Crud Demo K"),
       ),
-      body: Row(
-        children: [
-          TextFormField(
-            controller: nameController,
-            decoration: InputDecoration(
-              labelText: "Enter name"
-            ),
-          ),
-          ElevatedButton(onPressed: (){
-            return addItem(nameController.text),
-          },
-              child: Expanded(
-                  child: ListView.builder(
-                      itemCount: names.length,
-                    itemBuilder: (context,index),
-                  ))
-        ],
+      body: Padding(
+          padding: const EdgeInsets.all(15.0),
+        child: Column(),
       )
     );
   }
