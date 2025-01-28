@@ -16,9 +16,9 @@ class TextField4 extends StatelessWidget {
           children: [
             TextField(
               decoration: InputDecoration(
-                labelText: "Name", // Floating label
-                hintText: "Enter your name", // Hint text
-                border: const OutlineInputBorder(), // Outline border
+                labelText: "Name",
+                hintText: "Enter your name",
+                border: const OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 20),
@@ -26,7 +26,7 @@ class TextField4 extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: "Email",
                 hintText: "Enter your email",
-                border: const UnderlineInputBorder(), // Underline border
+                border: const UnderlineInputBorder(),
               ),
             ),
           ],
