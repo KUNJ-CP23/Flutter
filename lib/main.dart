@@ -12,6 +12,7 @@ import 'package:labprogram/lab_6/3_1.dart';
 import 'package:labprogram/lab_6/3_2.dart';
 import 'package:labprogram/lab_6/flut_demo.dart';
 import 'package:labprogram/lab_6/lay_ex1.dart';
+import 'package:labprogram/lab_6_1/lay1.dart';
 import 'package:labprogram/lab_7/controller_3.dart';
 import 'package:labprogram/lab_7/controller_3_2.dart';
 import 'package:labprogram/lab_7/custom_2.dart';
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Bottomvadisheet1(),
+      home: SplashScreen(),
     );
   }
 }
