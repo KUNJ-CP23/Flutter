@@ -144,7 +144,7 @@ class Image1State extends State<Image1> {
             ElevatedButton(
               onPressed: () {
                 setState(() {
-                  flag = true; // Switches to the image display mode
+                  flag = true;
                 });
               },
               child: const Text('Click me'),

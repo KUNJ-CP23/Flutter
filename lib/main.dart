@@ -20,6 +20,7 @@ import 'package:labprogram/lab_7/text_1.dart';
 import 'package:labprogram/lab_7/txtfld_onclick_5.dart';
 import 'package:labprogram/lab_8/dicetwo_5.dart';
 import 'package:labprogram/lab_8/form_extra.dart';
+import 'package:labprogram/lab_8/imagass_1_2.dart';
 import 'package:labprogram/lab_8/imgass_1.dart';
 import 'package:labprogram/lab_8/splash_scree.dart';
 import 'package:labprogram/lab_9/bdaynavigation.dart';
@@ -67,7 +68,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: Imageass1_2(),
     );
   }
 }
