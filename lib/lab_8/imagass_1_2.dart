@@ -10,10 +10,7 @@ class Imageass1_2 extends StatelessWidget {
         title: Text("Network Image Example"),
       ),
       body: Center(
-        child: Image.network(imageUrl, loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          return CircularProgressIndicator();
-        }),
+        child : Image.network("$imageUrl")
       ),
     );
   }
