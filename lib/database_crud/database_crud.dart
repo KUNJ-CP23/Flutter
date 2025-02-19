@@ -66,7 +66,7 @@ class _DatabaseState extends State<DatabaseCrud> {
 
   //making database if it exits then do change into this otherwise create new databasec
   Future<void> initDatabase() async{
-    _database= await openDatabase(
+    _database = await openDatabase(
       join(await getDatabasesPath(),'myDatabse.db'),
 
       onCreate: (db,version){

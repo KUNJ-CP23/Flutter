@@ -49,7 +49,6 @@ class _TodoListState extends State<TodoList> {
   @override
   void initState() {
     super.initState();
-    loadTasks();
   }
 
   void loadTasks() async {
@@ -61,13 +60,12 @@ class _TodoListState extends State<TodoList> {
 
   void deleteTask(int id) async {
     await dbHelper.deleteTask(id: id);
-    loadTasks(); // Refresh list
   }
 
   void _showAddTaskDialog(BuildContext context) {
-    final _titleController = TextEditingController();
-    final _descController = TextEditingController();
-    final _prioController = TextEditingController();
+    final titleController = TextEditingController();
+    final descController = TextEditingController();
+    final prioController = TextEditingController();
 
     showDialog(
       context: context,
@@ -77,22 +75,26 @@ class _TodoListState extends State<TodoList> {
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              TextField(controller: _titleController, decoration: InputDecoration(labelText: 'Title')),
-              TextField(controller: _descController, decoration: InputDecoration(labelText: 'Description')),
-              TextField(controller: _prioController, decoration: InputDecoration(labelText: 'Priority'), keyboardType: TextInputType.number),
+              TextField(controller: titleController, decoration: InputDecoration(labelText: 'Title')),
+              TextField(controller: descController, decoration: InputDecoration(labelText: 'Description')),
+              TextField(controller: prioController, decoration: InputDecoration(labelText: 'Priority'), keyboardType: TextInputType.number),
             ],
           ),
           actions: [
             TextButton(onPressed: () => Navigator.pop(context), child: Text('Cancel')),
             ElevatedButton(
               onPressed: () async {
-                if (_titleController.text.isNotEmpty && _prioController.text.isNotEmpty) {
+                if (titleController.text.isNotEmpty && prioController.text.isNotEmpty) {
                   await dbHelper.addTask(
-                    title: _titleController.text,
-                    desc: _descController.text,
-                    prio: int.parse(_prioController.text),
+                    title: titleController.text,
+                    desc: descController.text,
+                    prio: int.parse(prioController.text),
                   );
-                  loadTasks();
+                  setState(() {
+                  titleController.clear();
+                  descController.clear();
+                  prioController.clear();
+                  });
                   Navigator.pop(context);
                 }
               },
@@ -118,7 +120,7 @@ class _TodoListState extends State<TodoList> {
             margin: EdgeInsets.all(8.0),
             child: ListTile(
               title: Text(task['TITLE']),
-              subtitle: Text(task['DESC'] ?? 'No description'),
+              subtitle: Text(task['DESCRI'] ?? 'No description'),
               trailing: Text('Priority: ${task['PRIO']}'),
               onLongPress: () {
                 deleteTask(task['ID']);
