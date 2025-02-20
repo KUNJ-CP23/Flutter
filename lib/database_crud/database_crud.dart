@@ -1,47 +1,3 @@
-// import 'package:flutter/cupertino.dart';
-// import 'package:sqflite/sqflite.dart';
-// import 'package:path/path.dart';
-// import 'package:sqflite/sqflite.dart';
-//
-// class DatabaseCrud extends StatefulWidget {
-//   const DatabaseCrud({super.key});
-//
-//   @override
-//   State<DatabaseCrud> createState() => _DatabaseCrudState();
-// }
-//
-// class _DatabaseCrudState extends State<DatabaseCrud> {
-//   //pachi initialize thay che, database no obj ane
-//   late Database _database;
-//   TextEditingController title = TextEditingController();
-//   //description variable desc
-//   TextEditingController desc = TextEditingController();
-//
-//   //making main list of list
-//   List<Map<String,dynamic>> data = [];
-//
-//   //make database if exits then do change into this otherwise create new db
-//   Future<void> = initDatabase() async{
-//     _database = await openDatabase(
-//       join(await getDatabasesPath(),'myDatabase.db'),
-//
-//       onCreate: (db, version){
-//         return db.execute(
-//           'create table myTable(id INTEGER PRIMARY KEY AUTOMATICALLY, title TEXT,desc TEXT)'
-//         );
-//       },
-//       version: 1,
-//     );
-//   }
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Placeholder();
-//   }
-// }
-
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
@@ -59,8 +15,9 @@ class _DatabaseState extends State<DatabaseCrud> {
   //making object of class DATABASE
   late Database _database;
   TextEditingController title=TextEditingController();
+  //description variable desc
   TextEditingController desc=TextEditingController();
-
+//pachi initialize thay che, database no obj ane
   //making main list of user
   List<Map<String,dynamic>> data=[];
 
@@ -92,7 +49,6 @@ class _DatabaseState extends State<DatabaseCrud> {
     print('data is added');
     _fetchData();
   }
-
 
   @override
   void initState(){
