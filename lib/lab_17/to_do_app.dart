@@ -49,6 +49,7 @@ class _TodoListState extends State<TodoList> {
   @override
   void initState() {
     super.initState();
+    loadTasks();
   }
 
   void loadTasks() async {
@@ -60,6 +61,7 @@ class _TodoListState extends State<TodoList> {
 
   void deleteTask(int id) async {
     await dbHelper.deleteTask(id: id);
+    loadTasks(); // Refresh the task list
   }
 
   void _showAddTaskDialog(BuildContext context) {
@@ -90,12 +92,11 @@ class _TodoListState extends State<TodoList> {
                     desc: descController.text,
                     prio: int.parse(prioController.text),
                   );
-                  setState(() {
                   titleController.clear();
                   descController.clear();
                   prioController.clear();
-                  });
                   Navigator.pop(context);
+                  loadTasks(); // refresh list after adding task
                 }
               },
               child: Text('Add'),

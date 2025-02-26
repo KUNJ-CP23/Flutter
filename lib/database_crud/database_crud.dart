@@ -21,6 +21,7 @@ class _DatabaseState extends State<DatabaseCrud> {
   //making main list of user
   List<Map<String,dynamic>> data=[];
 
+
   //making database if it exits then do change into this otherwise create new databasec
   Future<void> initDatabase() async{
     _database = await openDatabase(
