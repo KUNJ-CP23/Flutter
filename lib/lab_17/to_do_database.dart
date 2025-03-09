@@ -48,16 +48,20 @@
 //   }
 // }
 
+
+
+
+
+//insert update delete datbase ni method che int return kare
+
+//db path, version, func accor to verson
+
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:flutter/cupertino.dart';
 
 class Database_todo {
   Future<Database> initDatabase() async {
-
-    //insert update delete datbase ni method che int return kare
-
-    //db path, version, func accor to verson
 
 
     Database db = await openDatabase(
