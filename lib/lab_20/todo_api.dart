@@ -183,7 +183,6 @@ class _TodoApiState extends State<TodoApi> {
     );
   }
 
-  // Show Add Task Dialog
   void _showAddTaskDialog(BuildContext context) {
     final titleController = TextEditingController();
     final descController = TextEditingController();
@@ -218,7 +217,6 @@ class _TodoApiState extends State<TodoApi> {
     );
   }
 
-  // Show Edit Task Dialog
   void _showEditTaskDialog(BuildContext context, String id, String title, String desc) {
     final titleController = TextEditingController(text: title);
     final descController = TextEditingController(text: desc);
@@ -253,7 +251,6 @@ class _TodoApiState extends State<TodoApi> {
     );
   }
 
-  // Delete Task
   void _deleteTask(String id) async {
     await apiTodo.deleteTodo(id);
     _refreshTasks();
